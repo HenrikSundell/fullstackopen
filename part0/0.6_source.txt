@@ -1,0 +1,10 @@
+note over Browser:
+runs client-sdie JavaScript that adds 
+new note to notes, renders the notes 
+list and sends the new note to the server
+end note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+Server-->Browser: 201: {"message":"note created"}
+
